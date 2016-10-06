@@ -1,0 +1,175 @@
+.pageContactUs,.pageHead,.c_pageHalf,.P_heading,P_heading,.P_heading2,.P_cont,.P_cont-l
+{
+	display:block;
+	float:left;
+	width:100%;
+} 
+.pageContactUs{
+	.pageHead{
+		height:500px;
+		line-height:500px;
+		font-size:400%;
+		font-family:GOTHICB;
+		text-align:center;
+		color:#fff;
+		background:$themeColor;
+	}
+	.c_pageHalf{
+		width:50%;
+		height:545px;
+		padding:40px 50px;
+		position:relative;
+		.P_heading,.P_heading2{
+			font-size:180%;
+			color:#555;
+			margin-bottom:25px;
+		}
+		.P_heading2{
+			color:#858585;
+			margin-bottom:15px;
+
+		}
+		.P_cont,.P_cont-l{
+			font-size:72%;
+			color:#aaa;
+			line-height:160%; 
+		}
+		.P_cont-l{
+			font-size:130%;
+			font-famlily:GOTHICM;
+		}
+		.p_cust-m-b{ margin-bottom:15px; }
+		.p_cust-m-t{ margin-top:15px; }
+
+		input,textarea{
+			display:block;
+			float:left;
+			margin:10px 0;
+			border:1px solid #ccc;
+			@include shadow(0,0,1px,rgba(0,0,0,0.2));
+			width:100%;
+			height:35px;
+			line-height:35px;
+			padding-left:10px;
+			@include border-radius(5px);
+			font-size:85%;
+		}
+		::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+		    color:    rgba(0,0,0,0.2);
+		    text-align: left;  
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		    color:    #000;
+		    opacity:  0.2;
+		    text-align: left; 
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		    color:    #000;
+		    opacity:  0.2;
+		    text-align: left; 
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		    color:    rgba(0,0,0,0.2);;
+		    text-align: left; 
+		}
+		textarea{
+			height:120px;
+			resize:none;
+		}
+		button{
+			background:#fff;
+			color:#aaa;
+			font-family:GOTHICM;
+			line-height:50px;
+			height:5p0x;
+			width:240px;
+			text-align:center;
+			border:1px solid #ddd;
+		}
+		.cu_mobHide{
+			position:absolute;
+			bottom:50px;
+			left:50px;
+		}
+		.cu_mobShow{
+			display:none; 
+		}
+	}
+}
+
+
+
+
+/* ------------------------------------------- RESPONSIVE --------------------------------------- */
+
+
+ 
+/* Extra large */
+@media screen and (min-width: $ExtraLarg) { 
+
+}
+  
+/* DeskTop */
+@media screen and (max-width: $Desktop) {   
+
+}
+  
+/* Tablet Landscape */
+@media screen and (max-width: $TabletL) { 
+	.pageContactUs{
+		.pageHead{
+			height:400px!important;
+			line-height:400px!important;
+			font-size:320%;
+		}
+	}
+	.c_pageHalf{
+		height:570px!important;
+	}
+	textarea{
+		height:130px!important;
+	}
+}
+ 
+/* Tabled Portrait */
+@media screen and (max-width: $TabletP) { 
+	.pageContactUs{
+		.pageHead{ 
+			font-size:230%;
+		}
+	}
+	.c_pageHalf{
+		width:100%!important;
+		height:auto;
+	}
+	.cu_mobShow{
+		display:block!important;
+	}
+	.cu_mobHide{
+		display:none!important;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: $Mobile) {  
+	.pageContactUs{
+		.pageHead{
+			height:300px!important;
+			line-height:300px!important;
+			font-size:140%;
+		}
+	} 
+	.c_pageHalf{
+		padding:20px 10px!important;
+	}
+}
+
+/* Mobile - medium */
+@media screen and (max-width: $MobileM) {  
+	
+}
+
+/* Mobile - Small */
+@media screen and (max-width: $MobileS) {  
+
+}

@@ -1,0 +1,26 @@
+.sitemapPage
+{
+	display:block;
+	float:left;
+}
+.sitemapPage{
+	width:100%;
+	.sitemapPageInner{
+		padding:20px 0 50px 0;
+		text-align:center;
+		h3{
+			font-family:GOTHICM;
+			font-size:140%;
+			color:#444;
+			line-height:600%;
+		}
+		a{ 
+			line-height:200%;
+			padding:0 6px;
+			font-size:80%;
+		}
+		a:hover{ cursor:pointer; }
+		.linkDef{ color:#aaa;  }
+		.linkDef:hover{ color:#333;  }
+	}
+} 

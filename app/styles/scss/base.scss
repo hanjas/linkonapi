@@ -1,0 +1,216 @@
+@import '_base/variables';
+@import '_functions/baseFunctions';
+body{ 
+  min-width: 100%;
+  min-height: 100%;
+  background:#fff; 
+}
+.blueNav{
+	color:#ddd;
+}
+/*
+@font-face {
+    font-family: courseCaps;
+    src: url(../../fonts/courseCaps.ttf);
+}
+@font-face {
+    font-family: course;
+    src: url(../../fonts/course.ttf);
+}
+*/
+
+@font-face {
+    font-family: TiredOfSearching;
+    src: url(../../fonts/Tired_of_searching.ttf);
+}
+
+@font-face {
+    font-family: AYearWithoutRain;
+    src: url(../../fonts/AYearWithoutRain.ttf);
+}
+ 
+@font-face {
+    font-family: GOTHIC;
+    src: url(../../fonts/MuseoSans_300.otf); 
+}
+@font-face {
+    font-family: GOTHICSM;
+    src: url(../../fonts/MuseoSans_500.otf); 
+}
+
+@font-face {
+    font-family: GOTHICM;
+    src: url(../../fonts/MuseoSans_700.otf); 
+}
+
+@font-face {
+    font-family: GOTHICB;
+    src: url(../../fonts/MuseoSans_900.otf); 
+}
+
+@font-face {
+    font-family: GOTHICBI;
+    src: url(../../fonts/GOTHICBI.ttf); 
+}
+
+@font-face {
+    font-family: thin;
+    src: url(../../fonts/thin.ttf); 
+}
+
+
+/*==========================================================================================*/
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+ 
+body {
+  font-family: GOTHIC; 
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+   /* max-width: 730px; */
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+.loader {
+  font-size: 20px;
+  margin: 150px auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load4 1.3s infinite linear;
+  animation: load4 1.3s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em $themeColor, 2em -2em 0 0em $themeColor, 3em 0 0 -1em $themeColor, 2em 2em 0 -1em $themeColor, 0 3em 0 -1em $themeColor, -2em 2em 0 -1em $themeColor, -3em 0 0 -1em $themeColor, -2em -2em 0 0 $themeColor;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0 $themeColor, 2em -2em 0 0.2em $themeColor, 3em 0 0 0 $themeColor, 2em 2em 0 -1em $themeColor, 0 3em 0 -1em $themeColor, -2em 2em 0 -1em $themeColor, -3em 0 0 -1em $themeColor, -2em -2em 0 -1em $themeColor;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em $themeColor, 2em -2em 0 0 $themeColor, 3em 0 0 0.2em $themeColor, 2em 2em 0 0 $themeColor, 0 3em 0 -1em $themeColor, -2em 2em 0 -1em $themeColor, -3em 0 0 -1em $themeColor, -2em -2em 0 -1em $themeColor;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em $themeColor, 2em -2em 0 -1em $themeColor, 3em 0em 0 0 $themeColor, 2em 2em 0 0.2em $themeColor, 0 3em 0 0em $themeColor, -2em 2em 0 -1em $themeColor, -3em 0em 0 -1em $themeColor, -2em -2em 0 -1em $themeColor;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em $themeColor, 2em -2em 0 -1em $themeColor, 3em 0 0 -1em $themeColor, 2em 2em 0 0em $themeColor, 0 3em 0 0.2em $themeColor, -2em 2em 0 0 $themeColor, -3em 0em 0 -1em $themeColor, -2em -2em 0 -1em $themeColor;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em $themeColor, 2em -2em 0 -1em $themeColor, 3em 0 0 -1em $themeColor, 2em 2em 0 -1em $themeColor, 0 3em 0 0 $themeColor, -2em 2em 0 0.2em $themeColor, -3em 0 0 0 $themeColor, -2em -2em 0 -1em $themeColor;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em $themeColor, 2em -2em 0 -1em $themeColor, 3em 0em 0 -1em $themeColor, 2em 2em 0 -1em $themeColor, 0 3em 0 -1em $themeColor, -2em 2em 0 0 $themeColor, -3em 0em 0 0.2em $themeColor, -2em -2em 0 0 $themeColor;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0 $themeColor, 2em -2em 0 -1em $themeColor, 3em 0 0 -1em $themeColor, 2em 2em 0 -1em $themeColor, 0 3em 0 -1em $themeColor, -2em 2em 0 0 $themeColor, -3em 0em 0 0 $themeColor, -2em -2em 0 0.2em $themeColor;
+  }
+}
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em $themeColor, 2em -2em 0 0em $themeColor, 3em 0 0 -1em $themeColor, 2em 2em 0 -1em $themeColor, 0 3em 0 -1em $themeColor, -2em 2em 0 -1em $themeColor, -3em 0 0 -1em $themeColor, -2em -2em 0 0 $themeColor;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0 $themeColor, 2em -2em 0 0.2em $themeColor, 3em 0 0 0 $themeColor, 2em 2em 0 -1em $themeColor, 0 3em 0 -1em $themeColor, -2em 2em 0 -1em $themeColor, -3em 0 0 -1em $themeColor, -2em -2em 0 -1em $themeColor;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em $themeColor, 2em -2em 0 0 $themeColor, 3em 0 0 0.2em $themeColor, 2em 2em 0 0 $themeColor, 0 3em 0 -1em $themeColor, -2em 2em 0 -1em $themeColor, -3em 0 0 -1em $themeColor, -2em -2em 0 -1em $themeColor;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em $themeColor, 2em -2em 0 -1em $themeColor, 3em 0em 0 0 $themeColor, 2em 2em 0 0.2em $themeColor, 0 3em 0 0em $themeColor, -2em 2em 0 -1em $themeColor, -3em 0em 0 -1em $themeColor, -2em -2em 0 -1em $themeColor;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em $themeColor, 2em -2em 0 -1em $themeColor, 3em 0 0 -1em $themeColor, 2em 2em 0 0em $themeColor, 0 3em 0 0.2em $themeColor, -2em 2em 0 0 $themeColor, -3em 0em 0 -1em $themeColor, -2em -2em 0 -1em $themeColor;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em $themeColor, 2em -2em 0 -1em $themeColor, 3em 0 0 -1em $themeColor, 2em 2em 0 -1em $themeColor, 0 3em 0 0 $themeColor, -2em 2em 0 0.2em $themeColor, -3em 0 0 0 $themeColor, -2em -2em 0 -1em $themeColor;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em $themeColor, 2em -2em 0 -1em $themeColor, 3em 0em 0 -1em $themeColor, 2em 2em 0 -1em $themeColor, 0 3em 0 -1em $themeColor, -2em 2em 0 0 $themeColor, -3em 0em 0 0.2em $themeColor, -2em -2em 0 0 $themeColor;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0 $themeColor, 2em -2em 0 -1em $themeColor, 3em 0 0 -1em $themeColor, 2em 2em 0 -1em $themeColor, 0 3em 0 -1em $themeColor, -2em 2em 0 0 $themeColor, -3em 0em 0 0 $themeColor, -2em -2em 0 0.2em $themeColor;
+  }
+}

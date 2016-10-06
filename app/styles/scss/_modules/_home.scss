@@ -1,0 +1,99 @@
+@import '../_base/variables';
+.home-top-inner{
+    transition: 0.5s;
+}
+.home-top-innerFade{
+    opacity:0;
+    @include transform(scale(0.9));
+}
+.home-top{ 
+    background:$themeColor; 
+    color:#fff;
+}
+.ht-sec-1{ 
+    padding:100px 50px 0px 15%;
+    font-size: 3vw;
+    color:rgba(255,255,255,0.7);
+    font-family:AYearWithoutRain;
+    .strong{
+        color:#fff;
+    }  
+}
+.ht-sec-2{ 
+    font-size: 2.5vw;
+    letter-spacing:0.1em;
+    font-weight: Bold;
+    font-family:GOTHICB;
+    color:rgba(255,255,255,0.7);
+    padding:0 50px; 
+    line-height:120%;
+    .diff{
+        font-family:AYearWithoutRain;
+        font-weight:100;
+    }
+}
+.ht-sec-2 .strong{
+    color:#fff; 
+}  
+.ht-sec-3 > div > input,.ht-sec-3 > div > button{
+    display:block;
+    float:left;
+    background:$themeColor;
+    border:solid 1px #fff; 
+    border-radius: 0;
+    text-align: center; 
+    font-family:GOTHICB;
+    font-size:140%;
+} 
+.ht-sec-3 > div > .angleDown{
+    background:$themeColor; 
+} 
+.ht-sec-3 > div > input{ 
+    font-family:AYearWithoutRain;
+    font-weight:100;
+    font-size:120%;
+    line-height:50px;
+    border-right:0;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    rgba(255,255,255,0.7);
+    text-align: center; 
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+    opacity:  0.7;
+    text-align: center; 
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+    opacity:  0.7;
+    text-align: center; 
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    rgba(255,255,255,0.7);;
+    text-align: center; 
+}
+.ht-sec-3 > div > button{
+    background:$themeCLight;
+    border-left: 0;
+} 
+.home-mid{
+    background:#fff; 
+    padding:50px 0;
+}
+.home-mid .hm-box{ 
+    background:#fff; 
+}   
+.home-mid .hm-box .sec2{ 
+    color:#333;
+    line-height: 30px;
+    padding:0 30px;
+}
+.home-mid .hm-box .sec3{ 
+    color:#777;
+    font-size: 90%;
+    padding:0 30px;
+    line-height: 130%;
+    overflow:hidden;
+} 
+

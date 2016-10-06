@@ -1,0 +1,113 @@
+@import '../_base/variables';
+ 
+.bl-ul .active  a{
+	background:none;
+    color:$themeColor;
+} 
+.cust-header{
+	.bl-ul {
+		$width:380px;
+		width:$width;
+		margin-left:calc(50% - #{$width / 2});
+		font-family:GOTHICB;
+		span{ 
+			display:block;
+			float:left; 
+		    text-align:center;
+		    height:100%;
+		    width:100px;
+		} 
+		.nav-HomeIcon{ 
+			width:40px;
+			font-size:180%;
+		}
+		.nav-SearchBtn{ 
+			width:40px;
+			font-size:155%;
+		}
+		.mobNavAct{
+			display:none;
+		}
+	}   
+	a{ 
+	    line-height:$headerHeight; 
+		background:none;
+	    color:#fff;
+	} 
+	a:hover{
+		cursor:pointer; 
+	} 
+}  
+.hidden{
+	display:none;
+}
+.show{
+	display:block;
+}  
+
+  
+/* Extra large */
+@media screen and (min-width: $ExtraLarg) { 
+	
+}
+  
+/* DeskTop */
+@media screen and (max-width: $Desktop) { 
+
+}
+  
+/* Tablet Landscape */
+@media screen and (max-width: $TabletL) { 
+
+}
+ 
+/* Tabled Portrait */
+@media screen and (max-width: $TabletP) { 
+
+}
+
+/* Mobile */
+@media screen and (max-width: $Mobile) { 
+	.ngViewDiv{
+		margin-top:50px!important;
+	}
+	
+	.cust-header{
+		height:50px;
+		line-height:50px;
+		.bl-ul {  
+			$width:100%;
+			width:$width;
+			margin-left:0;
+			.mobNavAct{ display:block;  }
+			.mobNavDeact{ display:none; } 
+			span{
+				a{
+					line-height:50px ;
+				}
+				font-size:130%;
+				width:20%;
+			}
+			.nav-HomeIcon{  
+				font-size:155%;
+				width:20%;
+			}
+			.nav-SearchBtn{  
+				font-size:135%;
+				line-height:40px;
+				width:20%;
+			} 
+		} 
+	}
+
+}
+
+/* Mobile - medium */
+@media screen and (max-width: $MobileM) { 
+
+}
+
+/* Mobile - Small */
+@media screen and (max-width: $MobileS) { 
+
+}

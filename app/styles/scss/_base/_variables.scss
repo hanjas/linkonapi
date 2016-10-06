@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+$themeColor : #66cbff;
+    $themeColorR : 102;
+    $themeColorG : 203;
+    $themeColorB : 225;
+$themeDark : #3d0042;
+$themeAsh : #313131;
+$defFont : #555;
+
+$headerHeight :75px;
+
+$themeCDark : #00a8ff;
+
+$themeCPale : #83a4b3;
+$themeCPale_H : #a0c4d5;
+
+$themeCLight : #98dcff;
+
+$teal:#3faac9;
+
+/* Colors */
+
+$blue:#3498db;
+    $blueR:52;
+    $blueG:152;
+    $blueB:219;
+
+$asphalt:#34495e;
+$yellow :#f1c40f;
+$greenBlue : #1abc9c;
+$green : #27ae60;
+$red : #c0392b;
+$orange : #e67e22;
+$grey : #95a5a6;
+$cloud : #ecf0f1;
+
+/* images */
+
+/* Testing */
+$TB1 : red dashed 1px;
+$TB2 : #555 dashed 1px;
+$TB3 : #aaa dashed 1px;
+$TB4 : #ddd dashed 1px;
+
+$Tborder : $TB1;
+ 
+
+ /* Responsive */
+
+ $MobileS    : 240px  ;
+ $MobileM    : 320px  ;
+ $Mobile    : 480px  ;
+ $TabletP   : 768px  ;
+ $TabletL   : 1060px ;
+ $Desktop   : 1370px ;
+ $ExtraLarg : 1370px ;

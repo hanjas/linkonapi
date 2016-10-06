@@ -1,0 +1,92 @@
+
+.pageOuter{   
+	.page-left{ 
+	}
+	.page-mid{ 
+		.paginator{
+			$width:400px; 
+			$height:50px; 
+			display:block;
+			float:left;
+			width:$width;
+			height:$height;
+			line-height:$height;
+			text-align:center;
+			margin:10px calc(50% - #{$width / 2});
+			.leftBtn,.rightBtn{
+				display:block;
+				float:left;
+				width:$height;
+				height:100%;
+				border:$themeColor solid 5px;
+				@include border-radius(50%);
+				line-height:40px;
+				font-size:140%;
+				color:$themeColor; 
+				position:relative;
+				i{
+					position:absolute;
+					right:14px;
+					top:10px;
+				}
+			}
+			.rightBtn{
+				padding-left:3px;
+				i{
+					position:absolute;
+					left:14px;
+					top:10px;
+				}
+			}
+			.mid{
+				display:block;
+				float:left;
+				width:calc(100% - #{ $height * 2 } );
+				height:100%; 
+				font-family:GOTHICB;
+				font-size:130%;
+			} 
+			.leftBtn:hover{
+				cursor:pointer; 
+				padding-right:6px;
+				border:$themeColor solid 6px;  
+				i{
+					position:absolute;
+					right:13px;
+					top:9px;
+				}
+			}
+			.rightBtn:hover{
+				cursor:pointer; 
+				padding-left:11px;
+				border:$themeColor solid 6px;  
+				i{
+					position:absolute;
+					left:13px;
+					top:9px;
+				}
+			}
+			.leftDeact, .rightDeact{
+				cursor:default;   
+				color:#ccc; 
+				border:#ccc solid 5px;
+			} 
+			.leftDeact:hover {
+				cursor:default;   
+				border:#ccc solid 5px;
+				i{ 
+					right:14px;
+					top:10px;
+				}
+			} 
+			.rightDeact:hover{
+				cursor:default;   
+				border:#ccc solid 5px;
+				i{ 
+					left:14px!important;
+					top:10px;
+				}
+			} 
+		}
+	}
+}	

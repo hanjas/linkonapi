@@ -1,0 +1,206 @@
+@import '../_base/variables'; 
+@import '../_functions/baseFunctions'; 
+
+$pageWidth:1000px;
+$asideWidth :220;
+
+$sectorHeight : 360;
+
+.pageOuter{   
+	.page-left{ 
+	}
+	.page-mid{ 
+		.sector{ 
+			.main{  
+				.top{   
+				}
+				.mid{ 
+				}
+				.bottom{  
+				}
+			} 
+			.childCart,.restChildCart{ 
+				.child{  
+					.head{ }
+					.mid{ 
+						.iconSet{
+							.active{ 
+								@include transform(scale(1)); 
+							}
+						}
+					}
+				}
+				.child:nth-child(1),
+				.child:nth-child(2)
+				{border-top:none;} 
+				.child:hover,.moreBtn:hover{
+					cursor:pointer;
+					background:rgba($themeColorR,$themeColorG,$themeColorB,0.2);
+					.mid{
+						.iconSet{
+							.active{ 
+
+							}
+						}
+					}
+				}
+				.moreBtn:hover{
+					background:rgba($themeColorR,$themeColorG,$themeColorB,0.4);
+				}
+			}
+		} 
+	}
+} 
+
+
+
+/* ------------------------------------------- RESPONSIVE --------------------------------------- */
+
+
+ 
+/* Extra large */
+@media screen and (min-width: $ExtraLarg) {  
+
+}
+  
+/* DeskTop */
+@media screen and (max-width: $Desktop) {  
+	.subParent{ 
+		.desc{ 
+			padding-top:0px!important; 
+			padding-bottom:5px!important; 
+		}
+	} 
+	@media screen and (min-width: $TabletL) {  
+		.coursePage{  
+			.boxx{
+				width:100%!important;
+				margin:0!important;
+			}
+		}
+	}
+}
+  
+/* Tablet Landscape */
+@media screen and (max-width: $TabletL) {  
+	.page-left{
+		display:none!important;
+	} 
+	.page-mid{ 
+		margin-left:0px!important;
+		width:100%!important;
+	} 
+	@media screen and (min-width: $TabletP) {  
+		.coursePage{  
+			.boxx{
+				width:94%!important;
+				margin:0 3%!important;
+			}
+		}
+	}
+}
+ 
+/* Tabled Portrait */
+@media screen and (max-width: $TabletP) { 
+	.sector{
+		.main,.childCart,.restChildCart{
+			width:50%!important;
+			margin-left:0px!important;
+			margin-right:0px!important; 
+		}
+		.childCart,.restChildCart{
+			margin-left:50%!important;;
+			.child:nth-child(2){
+				border-top:solid 1px #aaa!important;
+			}
+			.child,.moreBtn{
+				width:98%!important;
+				margin-left:2%!important;
+				margin-right:0px!important;
+			}
+		}
+		.restChildCart{
+			width:100%!important;
+			margin-left:0!important; 
+			.child:nth-child(even){
+				margin-left:1%!important; 
+				margin-right:0!important; 
+			}
+			.child,.moreBtn{
+				width:49%!important;
+				margin-right:1%!important;
+				margin-left:0px!important;
+			}
+		}
+	}
+
+	@media screen and (min-width: $Mobile) {  
+		.coursePage{  
+			.boxx{
+				width:94%!important;
+				margin:0 3%!important;
+			}
+		}
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: $Mobile) {  
+	.subParent{ 
+		.desc{ 
+			padding-top:20px!important;  
+		}
+	} 
+	.sector{
+		.main{
+			position:relative!important; 
+			margin-bottom:10px!important;
+		}
+		.main,.childCart,.restChildCart{
+			width:100%!important;
+			margin-left:0px!important;
+			margin-right:0px!important; 
+		}
+		.childCart,.restChildCart{
+			margin-left:0%!important; 
+			.child,.moreBtn{
+				width:90%!important;
+				margin-left:2%!important;
+				margin-right:0px!important;
+			}
+			.moreBtn{
+				height:60px!important;
+				line-height:40px!important;
+			}
+		} 
+	}
+
+	.page-mid{ 
+		.paginator{ 
+			width:96%!important;   
+			margin:10px 2%!important;
+		} 
+	} 
+	@media screen and (min-width: $MobileM) {  
+		.coursePage{  
+			.boxx{
+				width:94%!important;
+				margin:0 3%!important;
+			}
+		}
+	}
+}
+
+/* Mobile - medium */
+@media screen and (max-width: $MobileM) {  
+	.coursePage{  
+		.boxx{
+			width:100%!important;
+		}
+	}
+}
+
+/* Mobile - Small */
+@media screen and (max-width: $MobileS) {  
+
+}

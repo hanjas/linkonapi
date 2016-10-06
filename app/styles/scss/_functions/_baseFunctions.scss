@@ -1,0 +1,55 @@
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin shadow( $hoff , $voff, $blur , $color) {
+  -webkit-box-shadow:$hoff $voff $blur $color;
+  -moz-box-shadow:$hoff $voff $blur $color;
+  box-shadow: $hoff $voff $blur $color;
+}
+@mixin transition($Str){
+  -webkit-transition:$Str;
+    -moz-transition: $Str;
+    -o-transition: $Str;
+    transition: $Str; 
+}
+@mixin transition2($Str,$Str2,$Str3,$Str4){
+  -webkit-transition:$Str,$Str2,$Str3,$Str4;
+    -moz-transition: $Str,$Str2,$Str3,$Str4;
+    -o-transition: $Str,$Str2,$Str3,$Str4;
+    transition: $Str,$Str2,$Str3,$Str4; 
+}
+
+
+@mixin transition-delay($Str){
+  -webkit-transition-delay:$Str;
+    -moz-transition-delay: $Str;
+    -o-transition-delay: $Str;
+    transition-delay: $Str; 
+}
+@mixin transform($Str){
+  -webkit-transform:$Str;
+    -moz-transform: $Str;
+    -o-transform: $Str;
+    transform: $Str; 
+}
+
+@mixin blur($Str){ 
+  filter: blur($Str); /* Someday, sigh ... */ 
+  -webkit-filter: blur($Str); /* Prefixed CSS3 blur filters */
+  -moz-filter: blur($Str); 
+  -o-filter: blur($Str); 
+  -ms-filter: blur($Str); 
+  filter: url(#blur); /* Firefox needs SVG */
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='$Str'); /* IE lte 9 */   
+}
+@mixin filter($Str){ 
+  filter: $Str; /* Someday, sigh ... */ 
+  -webkit-filter: $Str; /* Prefixed CSS3 blur filters */
+  -moz-filter: $Str; 
+  -o-filter: $Str; 
+  -ms-filter: $Str;    
+}
+

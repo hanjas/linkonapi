@@ -1,0 +1,79 @@
+
+
+/* ------------------------------------------- RESPONSIVE --------------------------------------- */
+
+
+ 
+/* Extra large */
+@media screen and (min-width: $ExtraLarg) { 
+
+}
+  
+/* DeskTop */
+@media screen and (max-width: $Desktop) {   
+
+}
+  
+/* Tablet Landscape */
+@media screen and (max-width: $TabletL) { 
+
+}
+ 
+/* Tabled Portrait */
+@media screen and (max-width: $TabletP) { 
+	.pageHalf{
+		width:100%!important; 
+		.heading{
+			text-align:center;
+			line-height:150%!important;
+			height:auto!important;
+		}
+		.profile{ 
+			.profImg{ 
+				margin:0 calc(50% - 150px)!important; 
+			}
+			.profName{
+				width:100%!important;
+			}
+		}
+	} 
+}
+
+/* Mobile */
+@media screen and (max-width: $Mobile) { 
+	.pageHeader{
+		padding-top:10px!important;  
+		.heading{
+			font-size:300%!important;
+		}
+		.profile{ 
+			.profImg{ 
+				width:100px!important;
+				height:100px!important; 
+				margin:0 calc(50% - 50px)!important; 
+			}
+		}
+	}
+	.pageCont{
+		font-size:100%!important;
+		padding:10px 5px 20px 5px!important;
+	}
+}
+
+/* Mobile - medium */
+@media screen and (max-width: $MobileM) {  
+	.pageHeader{
+		padding-top:0px!important;  
+	} 
+	.pageCont{ 
+		line-height:110%!important;
+	}
+}
+
+/* Mobile - Small */
+@media screen and (max-width: $MobileS) {   
+	.pageCont{
+		font-size:100%!important;
+		padding:10px 10px 20px 10px!important;
+	}
+} 

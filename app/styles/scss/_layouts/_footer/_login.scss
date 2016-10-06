@@ -1,0 +1,89 @@
+.lgPage,.lgOuter,.lgHeader,.lgBox,.lgFooter.label{
+	display:block;
+	float:left;
+	width:100%;
+} 
+.lgPage{
+	background:#005389;
+	.lgOuter{ 
+		width:300px;
+		margin:100px calc(50% - 150px);
+		min-height:100px;
+		padding-bottom:30px;
+		.lgHeader,.lgFooter{
+			color:#fff;
+			font-size:300%;
+			font-family:GOTHICM;
+			line-height:200%;
+			text-align:center;
+		}
+		.lgFooter{ 
+			font-size:110%; 
+			line-height:400%;
+		}
+		.lgBox{
+			background:#fff;
+			padding:15px;
+			input[type=text],input[type=password],button{
+				margin:10px 0;
+				border:1px solid #eee;
+				@include border-radius(5px);
+				@include shadow(0,0,3px,rgba(0,0,0,0.1));
+				padding:0 15px;
+				height:32px;
+				line-height:32px;
+				width:100%;
+				text-align:left;
+				font-size:82%;
+			}
+			input[type=checkbox]{
+				display:block;
+				float:left;
+				height:12px;
+				width:12px;
+				margin-top:0 5px;
+			}
+
+			::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+			    color:    rgba(0,0,0,0.3);
+			    text-align: left; 
+			}
+			:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			    color:    #000;
+			    opacity:  0.3;
+			    text-align: left; 
+			}
+			::-moz-placeholder { /* Mozilla Firefox 19+ */
+			    color:    #000;
+			    opacity:  0.3;
+			    text-align: left; 
+			}
+			:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			    color:    rgba(0,0,0,0.3);;
+			    text-align: left; 
+			}
+			.label,a{
+				line-height:15px;
+				font-size:75%;
+				color:#ccc; 
+			}
+			button{
+				background:#005389;
+				color:#fff;
+				text-align:center;
+			}
+			a{
+				color:#005389;
+				font-family:GOTHICM;
+			}
+		}
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: $Mobile) { 
+	.lgOuter{
+		width:98%!important;
+		margin:1%!important;
+	}
+}

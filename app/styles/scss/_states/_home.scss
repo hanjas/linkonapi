@@ -1,0 +1,254 @@
+  
+.home-mid .hm-box a:hover  .sec3{
+    color:#236a8f;
+}
+.home-mid .hm-box a:hover  .sec2{
+    color:#3895c5;
+}
+.ht-sec-3 button:active{ 
+    font-size:130%;
+}   
+
+.ht-sec-3 button:active .fa{ 
+    font-size:85%;
+}   
+
+
+/* ---------------------------------------- RESPONSIVE ------------------------------------ */
+
+ 
+/* Extra large */
+@media screen and (min-width: $ExtraLarg) {  
+
+}
+  
+/* DeskTop */
+@media screen and (max-width: $Desktop) {   
+
+}
+  
+/* Tablet Landscape */
+@media screen and (max-width: $TabletL) {  
+    .hide-tabLand{display:none!important;}
+    .hide-TabL{display:none!important;}
+    .show-tabLand{display:block!important;} 
+
+    .ht-2-inner{ font-size:3.3vw; line-height:130%;letter-spacing:100%;}
+    .ht-sec-1{ 
+        padding-top:50px;
+        height:37%;  
+        font-size:3.5vw;
+    }
+    .ht-sec-2{ 
+        height:45%; 
+        padding:0 2px;
+    } 
+    .home-top-inner{
+    	.ht-2-tabL{
+    		display:block!important;
+    	}
+    }
+    .ht-sec-3{
+	    .homeSearchDrop{
+	    	top:auto;
+	    	bottom:100%;
+	    	border-bottom:0;
+	    	border-top:1px solid #fff;
+	    }
+    }
+}
+ 
+/* Tabled Portrait */
+@media screen and (max-width: $TabletP) { 
+    @media screen and (min-width: $Mobile) { 
+        @media screen and (max-height: $Mobile ){   
+            .home-top-inner{ 
+                .ht-sec-1{
+                    padding:20px 0 0 20px;
+                    height:30%;
+                }
+                .ht-sec-2{  
+                    .ht-2-tab-S{ display:none!important; } 
+                }   
+            }  
+        }
+    }
+    .hide-tabPort{display:none!important;}
+    .show-tabPort{display:block!important;} 
+
+    .ht-2-inner{ font-size:5vw; line-height:130%;}
+    .ht-sec-2{ .diff{font-size:3.5vw;}}
+    .hm-midOuter{width:100%;margin:0;}  
+    .ht-sec-3{ 
+        position:fixed;
+        bottom:30px;
+        .hm-searchOuter {
+            width:70%;
+            margin-left:15%;
+        }
+    } 
+    .ht-sec-3 { 
+        .homeSearchDrop{ 
+            width:100%;
+        }
+        input{ 
+        	width:calc(100% - 40px); 
+        }
+    } 
+    .ht-sec-1{ 
+        padding-top:50px;
+        height:40%;  
+        font-size:5vw;
+    }
+    .ht-sec-2{ 
+        height:35%; 
+    } 
+    .home-mid{
+    	.hm-box{
+    		width:100%; 
+            min-height:100px;
+            margin-top:10px;
+            margin-bottom:10px;
+            .sec1{
+                height:110px;
+                .img{ 
+                    margin-top:5px;
+                }
+            }
+            .sec1{padding-bottom:10px;}
+            .sec3{
+                width:400px;
+                margin-left:calc(50% - 200px);
+                padding:0;
+            }
+        }
+    } 
+}
+
+/* Mobile */
+@media screen and (max-width: $Mobile) { 
+    @media screen and (min-width: $MobileM) { 
+        @media screen and (max-height: $Mobile ){   
+            .home-top-inner{ 
+                .ht-sec-2{  
+                    .ht-2-mob{ display:none!important; }
+                    .ht-2-mob-s{ display:block!important; }
+                }   
+            }  
+        }
+    }
+	.hide-Mob{display:none!important;}
+	.home-top-inner{.ht-2-tabL{display:none!important;}}
+	.ht-sec-1{
+		.v-mobile-1{
+			font-size:140%;
+		}
+	}
+	.ht-2-inner{ font-size:6.2vw; line-height:130%;}
+	.ht-sec-2{ .diff{font-size:5.6vw;}}
+	.home-top-inner{
+		.ht-2-mob{
+			display:block!important;
+		}
+	}
+    .ht-sec-1{ 
+        padding-top:50px;
+        height:40%;  
+    }
+    .ht-sec-2{ 
+        height:40%; 
+    } 
+    .ht-sec-3{ 
+        position:fixed;
+        bottom:20px;
+        .hm-searchOuter {
+            width:86%;
+            margin-left:7%;
+        }
+    } 
+    .home-mid{
+        .hm-box {
+            .sec3{ 
+                width:94%;
+                margin:0 2%;
+                padding:0 20px;
+            }
+        }
+    }
+}
+/* Mobile - medium */
+@media screen and (max-width: $MobileM) {  
+    .home-top-inner{
+        .ht-sec-1{
+            font-size:7vw;
+            padding:20px 0 0 20px; 
+        }
+        .ht-sec-2{
+            .ht-2-mob{ display:none!important; }
+            .ht-2-mob-s{ display:block!important; font-size:6vw; }
+        } 
+        .ht-sec-3 > div > input,.ht-sec-3 > div > button{ 
+            height:40px; 
+            font-size:6vw; 
+            line-height:10px; 
+        }     
+        .ht-sec-3 button:active{ 
+            font-size:5.5vw;
+        }    
+        ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+            line-height:140%; 
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            line-height:140%; 
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+            line-height:140%; 
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            line-height:140%; 
+        }
+    }
+    @media screen and (max-height: $MobileM){  
+        .home-top-inner{
+            .ht-sec-1{ 
+                height:30%;
+            } 
+            .ht-sec-2{   
+            }  
+            .ht-sec-3{
+                .homeSearchDrop{  
+                    min-height:0;
+                    .hs-drop-item{
+                        height:25px;
+                        line-height:25px;
+                        font-size:5vw;
+                        paddin-left:10px;
+                    }
+                }
+                .hm-searchOuter {
+                    width:60%;
+                    margin-left:20%;
+                }
+            }
+        }  
+    } 
+    @media screen and (max-height: $MobileS ){   
+        .home-top-inner{ 
+            .ht-sec-2{  
+                display:none!important;  
+            }   
+        }  
+    }
+}
+
+/* Mobile - Small */
+@media screen and (max-width: $MobileS) {  
+    .home-top-inner{ 
+        .ht-sec-1{ 
+                height:40%;
+            } 
+        .ht-sec-2{ 
+            .ht-2-mob-s{ display:block!important; font-size:8.5vw; } 
+        }   
+    }   
+}

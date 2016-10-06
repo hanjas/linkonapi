@@ -1,0 +1,251 @@
+.studHelpPage,
+.sh_mainBox,.sh_box,
+.shb_head,
+	.shbh_img,.shbh_name,.shbh_number,
+	.shbl_article,.shbl_artHead,
+.shb_body,
+.shb_btnOuter,
+	.shbb_btn,
+.shb_footer
+{
+	display:block;
+	float:left;
+}
+
+.sh_mainBox{
+	width:100%;
+	padding:10px;
+	padding-top:20px;	
+}
+.sh_box{
+	background:#fff;
+	min-height:140px;
+	@include shadow(0,0,10px,rgba(0,0,0,0.3));
+	margin:10px;
+}
+.shb-top{
+	@include border-radius(5px);
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+		color:    rgba(0,0,0,0.5);
+	    text-align: left; 
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	    color:    #fff;
+	    opacity:  0.5;
+	    text-align: left; 
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	    color:    #fff;
+	    opacity:  0.5;
+	    text-align: left; 
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	    color:    rgba(0,0,0,0.5);;
+	    text-align: left; 
+	}
+	.shb_head{
+		width:100%;
+		min-height:150px;	
+		position:relative;
+		overflow:hidden; 
+		@include border-radius(5px 5px 0 0 );
+		.shbh_img{
+			width:70px;
+			height:70px;
+			margin:30px 20px 5px 40px;
+			background:#ddd;
+			@include border-radius(50%);
+		}
+		.shbh_name,
+		.shbh_number{
+			font-family:GOTHICB; 
+			padding-top:60px;
+			color:#666;
+		}
+		.shbh_number{
+			float:right;
+			margin-right:40px;
+		}  
+		.shbh_inp{
+			width:calc( 100% - 80px );
+			border:0; 
+			height:40px;
+			line-height:40px;
+			margin-left:40px;
+		} 
+	}
+	.shb_body{
+		width:100%;
+		height:280px;
+	}
+	.shb_btnOuter{
+		width:100%;
+		height:50px;
+		padding-right:35px;
+		.shbb_btn{
+			float:right;
+			padding:0 10px;
+			height:40px;
+			line-height:40px;
+			margin:5px 10px;
+			font-family:GOTHICSM;
+			@include border-radius(7px);
+			min-width:100px;
+			color:#888;
+			text-align:center;
+		}
+		.shbb_btn:hover{
+			cursor:pointer;
+			background:#eee;
+		}
+		.shbb_btn:active{ 
+			font-size:97%;
+		}
+	}
+	.shb_footer{
+		width:100%;
+		min-height:80px;
+		background:#F5F5F5;
+		position:relative;
+		overflow:hidden;
+		@include border-radius(0 0 5px 5px);
+		div{
+			display:block;
+			float:left;
+			width:200px;
+			height:80px;
+			line-height:80px;
+			text-align:right;
+			padding-right:20px;
+			color:#999;
+			font-size:120%;
+		}
+		input{
+			border:none;
+			@include border-radius(3px);
+			width:calc( 100% - 240px );
+			height:40px;
+			line-height:40px;
+			padding:0 10px;
+			margin:20px 0;
+		}
+	}
+}
+.shb-2_3{
+	width:calc(66.6666% - 20px);
+}
+.shb-1_3{
+	width:calc(33.3333% - 20px);
+}
+.shb-top-left{
+	min-height:560px;
+}
+.shbl_artHead{
+	width:100%;
+	height:70px;
+	line-height:70px;
+	text-align:center; 
+	font-family:GOTHICB;
+	color:#888;
+}
+.shbl_article{
+	color:#888;
+	font-size:75%;
+	width:calc( 100% - 40px );
+	padding:10px;
+	margin:0 20px; 
+	border-top:1px solid #ddd;
+	h5{
+		font-family:GOTHICB;
+		color:#555;
+	}
+}
+
+
+.wysibb,
+.wysibb-text,
+.wysibb-body{
+	width:100%;
+	height:100%;
+}
+.wysibb-text{
+	height:calc( 100% - 65px);
+	font-size:130%;
+	padding:10px 17px!important;
+}
+.wysibb{
+	width:calc(100% - 80px);
+	margin-left:40px;
+	margin-right:40px;
+	border:0!important;
+	border-top:1px solid #ddd!important;
+}
+.wysibb-body-placeholder{
+	position:relative;
+}
+.wysibb-body-placeholder:after{
+	content:"Tell everyone more about it!";
+	display:block;
+	float:left;
+	position:absolute;
+	top:0;
+	left:0;
+	color:rgba(0,0,0,0.5);
+	cursor:text;
+} 
+.wysibb-toolbar{
+	position:absolute!important;
+	bottom:0px;
+	left:0px;
+}
+
+.mswitch,
+.wbb-code,
+.wbb-quote
+{
+	display:none!important;
+}
+
+
+/* ------------------------------------------- RESPONSIVE --------------------------------------- */
+
+
+ 
+/* Extra large */
+@media screen and (min-width: $ExtraLarg) { 
+
+}
+  
+/* DeskTop */
+@media screen and (max-width: $Desktop) {   
+	.studHelpPage {
+		.boxx {
+	        width: 1000px;
+	    }
+    }
+}
+  
+/* Tablet Landscape */
+@media screen and (max-width: $TabletL) {  
+
+}
+ 
+/* Tabled Portrait */
+@media screen and (max-width: $TabletP) { 
+
+}
+
+/* Mobile */
+@media screen and (max-width: $Mobile) {  
+
+}
+
+/* Mobile - medium */
+@media screen and (max-width: $MobileM) {  
+
+}
+
+/* Mobile - Small */
+@media screen and (max-width: $MobileS) {  
+
+}

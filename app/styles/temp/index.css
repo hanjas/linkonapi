@@ -1,0 +1,206 @@
+/*
+ _______________________________________________________________________________________________________________________________________________________
+|																																						|
+|																NAVIGATION BAR																			|
+|_______________________________________________________________________________________________________________________________________________________|
+*/
+
+.cust-header{
+	height:50px;
+    margin-top: -50px;
+    transition: margin-top 0.5s;
+}
+.hShow{
+    margin-top: 0px;
+}
+.ngView{
+    margin-top:50px;
+    min-height:400px;
+}
+/*
+ _______________________________________________________________________________________________________________________________________________________
+|																																						|
+|												        				FOOTER																			|
+|_______________________________________________________________________________________________________________________________________________________|
+*/
+
+.cust-footer{
+    display: block;
+    float: left;
+    width:100%;
+    min-height:0px;
+    background:#3b3b3b;
+}
+.cust-footer   .cf-sec-1{
+    width:95%;
+    margin:0 2.5%;
+    height:60px;
+    border-bottom:2px solid #000;
+}
+.cust-footer  .cf-sec-2{
+    width:100%;
+    min-height:300px;
+}
+.cust-footer  .cf-sec-3{
+    width:100%;
+    height:60px;
+    background:#000;
+    text-align:right;
+}
+.cust-footer .cf-sec-1 ,.cust-footer .cf-sec-3{
+    line-height: 60px;
+    font-size:150%;
+    color:#ccc;
+}
+.cf-sec-2 > div{
+    display:block;
+    float: left;
+    width:25%;
+    height:100%;
+}
+.cf-sec-2 > div:nth-child(3){
+    width:50%;
+}
+.cfs2-1 h4,
+.cfs2-2 h4{
+    font-size: 90%;
+    color:#ddd;
+    line-height: 150%;
+    padding:5px;
+}
+
+.cfs2-1 > div:nth-child(2) > div {
+    display:block;
+    float: left;
+    width:100%;
+}
+.cfs2-1 > div:nth-child(2) > div > a{
+    display:inline-block;
+    float: left;
+    width:30px;
+    height:30px;
+    margin:5px;
+    background:#222;
+    border-radius: 5px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 50px 100px;
+    transition: background-position 0.4s;
+}
+.cfs2-1 > div:nth-child(2) > div > a:nth-child(1){
+    background:#3b5995; background-image: url('../images/icons/fb-50.png'); background-size: 30px 30px;
+    background-position: 0px 0px;
+}
+.cfs2-1 > div:nth-child(2) > div > a:nth-child(1):hover{
+    background:#627eb7; background-image: url('../images/icons/fb-50.png'); background-size: 30px 30px;
+    background-position: 0px 30px;
+    cursor: pointer;
+}
+
+.cfs2-1 > div:nth-child(2) > div > a:nth-child(2){
+    background:#0eacf5; background-image: url('../images/icons/twitter-50.png'); background-size: 30px 30px;
+    background-position: 0px 0px;
+}
+.cfs2-1 > div:nth-child(2) > div > a:nth-child(2):hover{
+    background:#7cd2f9; background-image: url('../images/icons/twitter-50.png'); background-size: 30px 30px;
+    background-position: 0px 30px;
+    cursor: pointer;
+}
+
+.cfs2-1 > div:nth-child(2) > div > a:nth-child(3){
+    background:#d94f42; background-image: url('../images/icons/gplus-50.png'); background-size: 30px 30px;
+    background-position: 0px 0px;
+}
+.cfs2-1 > div:nth-child(2) > div > a:nth-child(3):hover{
+    background:#ef7c71; background-image: url('../images/icons/gplus-50.png'); background-size: 30px 30px;
+    background-position: 0px 30px;
+    cursor: pointer;
+}
+
+.cfs2-1 > div:nth-child(2) > div > a:nth-child(4){
+    background:#b92a24; background-image: url('../images/icons/fb-50.png'); background-size: 30px 30px;
+    background-position: 0px 0px;
+}
+.cfs2-1 > div:nth-child(2) > div > a:nth-child(4):hover{
+    background:#f0554e; background-image: url('../images/icons/fb-50.png'); background-size: 30px 30px;
+    background-position: 0px 30px;
+    cursor: pointer;
+}
+.cfs2-1 > div:nth-child(3) > div {
+    padding:5px 0 5px 15px;
+}
+.cfs2-2 > div:nth-child(2) {
+    padding:5px 40px 5px 0px;
+}
+.cust-footer a,.cust-footer a:focus,.cust-footer a:active {
+     font-size: 90%;
+     color:#888;
+ }
+
+.cust-footer a:hover {
+    color:#ccc;
+    cursor: pointer;
+}
+
+.cfs2-2 form input,.cfs2-2 form button{
+    background: #000;
+    width:90%;
+    height:40px;
+    margin:5px 0;
+    border-radius: 5px;
+    border:none;
+    text-align:center;
+    color:#ddd;
+    line-height: 40px;
+}
+.cfs2-2 form button{
+    background: #84b246;
+    font-size: 90%;
+    color:#fff;
+}
+.cfs2-2 form button:hover{ background: #9fd457; }
+.cfs2-2 form button:active{ background: #84b147; }
+
+
+.cfs2-3 > .sec-1{
+    font-size: 200%;
+    color:#fd604d;
+    height:60px;
+    line-height: 60px;
+    padding:0 10px;
+}
+.cfs2-3 > .sec-2 > .box{
+    display: block;
+    float: left;
+    margin: 0 3%;
+    width: 94%;
+    height: 120px;
+    background:#fd604d;
+}
+.cfs2-3 > .sec-2 > .box > div{
+    height:100px;
+    margin-top:10px;
+}
+.cfs2-3 > .sec-2 > .box > div > img{
+    max-height:100%;
+    max-width:100%;
+}
+.cfs2-3 > .sec-2 > span{
+    display: block;
+    float: left;
+    font-size: 150%;
+    color:#aaa;
+    height:60px;
+    line-height: 60px;
+    text-align: center;
+    width:100%;
+}
+.cfs2-3 > div {
+    display: inline-block;
+    float: left;
+}
+.cfs2-3 > .sec-3 {
+     color:#bbb;
+    line-height: 120%;
+    padding:0 10px;
+}

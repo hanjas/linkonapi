@@ -1,0 +1,91 @@
+@import '_base/variables';
+.cust-header{ 
+    transition: margin-top 0.5s;
+}  
+@import '../_functions/baseFunctions'; 
+.cust-footer{
+    font-family:GOTHICB;  
+    background:#101010;
+    $border:rgba(255,255,255,0.3) 1px solid; 
+    .foot-1{
+        line-height:120px;
+        color:#fff;
+        text-align:center;
+        letter-spacing:.1em;
+        font-size:110%;
+    }
+    .foot-2{
+        .foot-2block{
+            line-height:45px;
+            color:$themeCPale;
+            text-align:center;
+            font-size:110%;
+            letter-spacing:.1em;
+            border:$border; 
+        }
+    }
+    .foot-3{
+        border-top:$border;
+        border-bottom:$border; 
+        padding:20px 15%;
+    }
+    .foot-4{
+        padding:20px 20px 0 20px;
+        .foot-4block{
+            padding:0 17px; 
+            text-align:center;
+            color:rgba(255,255,255,0.7);
+            font-family:GOTHIC;
+            position:relative;
+        }
+        .foot-4block::after{
+            content:' ';
+            display:block;
+            float:left;
+            position:absolute;
+            right:-8px;
+            top:calc(50% - 2px);
+            width:7px;
+            height:7px;
+            background:$themeCPale;
+            @include transform(rotate(45deg));
+        }
+        .foot-4block:nth-last-child(1)::after{ 
+            display:none; 
+        }
+    }
+    .foot-5{
+        line-height:120px; 
+        text-align:center;
+        letter-spacing:.1em;
+        font-size:110%;
+        color:rgba(255,255,255,0.4);
+        font-family:GOTHIC;
+    }
+}
+/* ICONS */
+
+$iconWidthS : 20px;
+$iconWidthM : 35px;
+$iconWidthL : 50px;
+
+.star-checked{ 
+    display:block;
+    float:left;
+    background: url('../../images/icons/star_checked.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    width:$iconWidthS; height:$iconWidthS;
+    padding:0px;
+    margin:0px;
+} 
+.star-unchecked{ 
+    display:block;
+    float:left;
+    background: url('../../images/icons/star_unchecked.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    width:$iconWidthS; height:$iconWidthS;
+    padding:0px;
+    margin:0px;
+}

@@ -1,0 +1,161 @@
+@import '_functions/baseFunctions';
+@import '_base/variables';
+.cust-footer{ 
+    .foot-1{ 
+    	span{ 
+        	cursor:pointer;
+    	}
+    }
+    .foot-2{ 
+        .foot-2block:hover{ 
+        	cursor:pointer;
+        	color:$themeCPale_H;
+        }
+    }
+    .foot-3{ 
+        .foot-3block:hover{ 
+        	cursor:pointer;
+            img{  
+            	@include filter(brightness(120%));
+            }
+        }
+    }
+    .foot-4{  
+        .foot-4block{ 
+        	span:hover{
+        		cursor:pointer;
+        		color:rgba(255,255,255,.85);
+        	}
+        }
+    }
+    .foot-5{ 
+    }
+} 
+
+
+/* ------------------------------------------- RESPONSIVE --------------------------------------- */
+
+
+ 
+/* Extra large */
+@media screen and (min-width: $ExtraLarg) { 
+    .respDoctor{ 
+        .rd-TL,.rd-TP,.rd-D,.rd-EL,.rd-M,.rd-M-M,.rd-M-S {display:none;} 
+        .rd-EL{ display:block; } 
+    }
+}
+  
+/* DeskTop */
+@media screen and (max-width: $Desktop) { 
+    .respDoctor{ 
+        .rd-TL,.rd-TP,.rd-D,.rd-EL,.rd-M,.rd-M-M,.rd-M-S {display:none;} 
+        .rd-D{ display:block; }
+    }
+}
+  
+/* Tablet Landscape */
+@media screen and (max-width: $TabletL) { 
+    .respDoctor{ 
+        .rd-TL,.rd-TP,.rd-D,.rd-EL,.rd-M,.rd-M-M,.rd-M-S {display:none;} 
+        .rd-TL{ display:block; }
+    }
+}
+ 
+/* Tabled Portrait */
+@media screen and (max-width: $TabletP) { 
+    .respDoctor{ 
+        .rd-TL,.rd-TP,.rd-D,.rd-EL,.rd-M,.rd-M-M,.rd-M-S {display:none;} 
+        .rd-TP{ display:block; }
+    }
+    .cust-footer{
+        .foot-4{
+            .foot-4block{
+                width:100%; line-height:30px;
+            } 
+        } 
+        .foot-2{
+            .foot-2block{
+                font-size:85%;
+            }
+        } 
+        .foot-3{ 
+            width:90%;
+            margin:0 5%;  
+            padding:10px;
+            .foot-3block{ 
+                width:16%;
+                margin:0 2%; 
+                img{
+                    max-width:100%;
+                    min-width:100%;
+                    height:auto;
+                }
+            }
+        }
+        .foot-4{
+            .foot-4block:nth-last-child(3)::after{ 
+                display:none; 
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: $Mobile) { 
+    .respDoctor{ 
+        .rd-TL,.rd-TP,.rd-D,.rd-EL,.rd-M,.rd-M-M,.rd-M-S {display:none;} 
+        .rd-M{display:block;}
+    }
+    .cust-footer{
+        .foot-1{
+            line-height:120%;
+            padding:30px 0 20px 0;
+        }
+        .foot-2{
+            .foot-2block{
+                font-size:75%;
+            }
+        }  
+        .foot-4{ 
+            .foot-4block{ 
+                display:block;
+                float:left;
+                width:100%;
+                font-size:90%;
+            }
+            .foot-4block::after{ 
+                display:none; 
+            }
+        }
+    }
+}
+
+/* Mobile - medium */
+@media screen and (max-width: $MobileM) { 
+    .respDoctor{ 
+        .rd-TL,.rd-TP,.rd-D,.rd-EL,.rd-M,.rd-M-M,.rd-M-S {display:none;} 
+        .rd-M-M{display:block;}
+    }
+    .cust-footer{
+        .foot-2{
+            .foot-2block{
+                width:100%;
+                margin:10px 0;
+                font-size:6vw;
+            }
+        }  
+        .foot-3{
+            .foot-3block{
+                min-height:20px;
+            }
+        }  
+    }  
+}
+
+/* Mobile - Small */
+@media screen and (max-width: $MobileS) { 
+    .respDoctor{ 
+        .rd-TL,.rd-TP,.rd-D,.rd-EL,.rd-M,.rd-M-M,.rd-M-S {display:none;} 
+        .rd-M-S{display:block;}
+    }
+}

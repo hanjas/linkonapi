@@ -1,0 +1,57 @@
+.aboutUsPage,.pageHeader,.pageHalf,.profile,.profImg,.profName,.pageCont,.heading
+{
+	display:block;
+	float:left;
+	width:100%;
+}
+.aboutUsPage{   
+	@media (min-width: 1061px) {
+	    .boxx {
+	        width: 800px;
+	    }
+	}
+	@media (min-width: 1336px) {
+	    .boxx {
+	        width: 800px;
+	    }
+	}
+	.pageHeader{
+		padding-top:70px;
+		.pageHalf{
+			float:right;
+			width:50%;
+			.heading{
+				font-size:500%;
+				color:#4c4d51;
+				line-height:350px;
+				height:350px;
+			}
+			.profile{ 
+				.profImg{
+					width:300px;
+					height:300px;
+					margin:0 30px;
+					background:#00a8ff;
+					position:relative;
+					overflow:hidden;
+					@include border-radius(50%);
+				}
+				.profName{
+					font-size:90%;
+					font-family:GOTHICSM;
+					color:#aaa;
+					text-align:center;
+					padding-top:25px;
+					width:360px;
+				}
+			}
+		}
+	}
+	.pageCont{
+		color:#888;
+		padding:30px;
+		font-size:150%;
+		line-height:130%;
+	}
+} 
+

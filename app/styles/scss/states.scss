@@ -1,0 +1,28 @@
+@import '_states/index';
+@import '_states/home';
+@import '_states/courses';
+ 
+@import '_states/_home/contact_us';
+@import '_states/_home/scolarship';
+@import '_states/_home/student_help';
+
+@import '_states/_colleges/college_list';
+@import '_states/_colleges/college_profile';
+@import '_states/_colleges/first_filter';
+ 
+@import '_states/_courses/course_details';
+
+@import '_states/_exams/exam_details';
+
+@import '_states/_footer/about_us';
+@import '_states/_footer/coming_soon';
+@import '_states/_footer/disclamer';
+@import '_states/_footer/donate';
+@import '_states/_footer/feedback';
+@import '_states/_footer/join_the_team';
+@import '_states/_footer/login';
+@import '_states/_footer/sitemap';
+
+@import '_states/_general/error_page';
+@import '_states/_general/save_and_compare';
+@import '_states/_general/search_found';
